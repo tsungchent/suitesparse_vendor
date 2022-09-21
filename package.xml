@@ -1,0 +1,22 @@
+<package>
+  <name>suitesparse_vendor</name>
+  <version>1.14.0</version>
+  <description>suitesparse_vendor</description>
+  <maintainer email="sameeragarwal@google.com">Sameer Agarwal</maintainer>
+
+  <license>New BSD</license>
+
+  <url type="website">https://code.google.com/p/ceres-solver/</url>
+
+  <author>Sameer Agarwal</author>
+  
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>eigen</build_depend>
+  <build_depend>libblas-dev</build_depend>
+  <build_depend>liblapack-dev</build_depend>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

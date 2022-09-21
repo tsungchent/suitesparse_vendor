@@ -1,0 +1,15 @@
+find_package(suitesparse QUIET)
+
+if(NOT suitesparse_FOUND)
+  # add the local Modules directory to the modules path
+  if(WIN32)
+    set(suitesparse_DIR "${@PROJECT_NAME@_DIR}/../../../lib/cmake/suitesparse-5.4.0")
+  endif()
+  message(STATUS "Setting suitesparse_DIR to: '${suitesparse_DIR}'")
+  find_package(suitesparse CONFIG REQUIRED QUIET)
+endif()
+
+set(@PROJECT_NAME@_LIBRARIES ${SuiteSparse_LIBRARIES})
+set(@PROJECT_NAME@_INCLUDE_DIRS ${SuiteSparse_INCLUDE_DIRS})
+
+# list(APPEND @PROJECT_NAME@_TARGETS suitesparse)
