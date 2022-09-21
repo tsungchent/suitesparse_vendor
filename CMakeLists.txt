@@ -30,5 +30,11 @@ install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/suitesparse_install/include/
         FILES_MATCHING PATTERN "*.h")
 install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/suitesparse_install/lib/
         DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
+        
+if(WIN32)
+  install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/suitesparse_src-prefix/src/suitesparse_src/lapack_windows/
+          DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/lapack_windows
+  )
+endif()
 
 ament_package(CONFIG_EXTRAS "cmake/suitesparse-vendor-extras.cmake.in")

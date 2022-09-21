@@ -1,3 +1,7 @@
+if(WIN32)
+  set(LAPACK_DIR "${@PROJECT_NAME@_DIR}/../../../lib/lapack_windows/x64")
+endif()
+
 find_package(suitesparse QUIET)
 
 if(NOT suitesparse_FOUND)
