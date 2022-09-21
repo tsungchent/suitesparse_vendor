@@ -27,7 +27,7 @@ ExternalProject_Add(suitesparse_src
 
 install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/suitesparse_install/include/
         DESTINATION ${CMAKE_INSTALL_PREFIX}/include
-        FILES_MATCHING PATTERN "*.h")
+        FILES_MATCHING PATTERN "*.h*")
 install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/suitesparse_install/lib/
         DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
         

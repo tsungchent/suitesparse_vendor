@@ -10,7 +10,7 @@ if(NOT suitesparse_FOUND)
     set(suitesparse_DIR "${@PROJECT_NAME@_DIR}/../../../lib/cmake/suitesparse-5.4.0")
   endif()
   message(STATUS "Setting suitesparse_DIR to: '${suitesparse_DIR}'")
-  find_package(suitesparse CONFIG REQUIRED QUIET)
+  find_package(suitesparse CONFIG QUIET)
 endif()
 
 set(@PROJECT_NAME@_LIBRARIES ${SuiteSparse_LIBRARIES})

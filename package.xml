@@ -2,13 +2,13 @@
   <name>suitesparse_vendor</name>
   <version>1.14.0</version>
   <description>suitesparse_vendor</description>
-  <maintainer email="sameeragarwal@google.com">Sameer Agarwal</maintainer>
+  <maintainer email="chentsung@outlook.com">chentsung</maintainer>
 
   <license>New BSD</license>
 
   <url type="website">https://code.google.com/p/ceres-solver/</url>
 
-  <author>Sameer Agarwal</author>
+  <author>chentsung</author>
   
   <buildtool_depend>ament_cmake</buildtool_depend>
 
